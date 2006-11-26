@@ -41,7 +41,7 @@ install distfiles/konverter.desktop \
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files  -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %doc distfiles/{NEWS,TODO,README,AUTHORS,ChangeLog}
 %attr(755,root,root) %{_bindir}/konverter
