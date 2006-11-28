@@ -1,5 +1,5 @@
 Summary:	A KDE video conversion tool
-Summary(pl):	Video konwerter dla KDE
+Summary(pl):	Konwerter filmów dla KDE
 Name:		konverter
 Version:	0.93
 Release:	1
@@ -7,8 +7,9 @@ License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://www.kraus.tk/projects/konverter/sources/%{name}-%{version}.tar.gz
 # Source0-md5:	e0dce10b449aaad948f8a749d01e7b00
-URL:		http://www.kraus.tk/projects/konverter
+URL:		http://www.kraus.tk/projects/konverter/
 BuildRequires:	kdelibs-devel
+BuildRequires:	qmake
 BuildRequires:	xine-lib-devel
 Requires:	mencoder
 Requires:	mplayer
@@ -16,11 +17,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Konverter is a KDE MEncoder frontend for easy video
-conversions,scaling and cropping.
+conversions, scaling and cropping.
 
 %description -l pl
-Konverter jest nak³adk± na MEncoder do ³atwej konwersji video,
-skalowania lub wycinania.
+Konverter jest nak³adk± na MEncoder do ³atwej konwersji, skalowania i
+przycinania filmów.
 
 %prep
 %setup -q -n %{name}
@@ -36,7 +37,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/kde}
 
 install bin/konverter $RPM_BUILD_ROOT%{_bindir}/konverter
 install distfiles/konverter.desktop \
-   $RPM_BUILD_ROOT%{_desktopdir}/kde/%{name}.desktop
+	$RPM_BUILD_ROOT%{_desktopdir}/kde/%{name}.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
