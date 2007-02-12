@@ -1,5 +1,5 @@
 Summary:	A KDE video conversion tool
-Summary(pl):	Konwerter filmów dla KDE
+Summary(pl.UTF-8):   Konwerter filmÃ³w dla KDE
 Name:		konverter
 Version:	0.93
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Konverter is a KDE MEncoder frontend for easy video
 conversions, scaling and cropping.
 
-%description -l pl
-Konverter jest nak³adk± na MEncoder do ³atwej konwersji, skalowania i
-przycinania filmów.
+%description -l pl.UTF-8
+Konverter jest nakÅ‚adkÄ… na MEncoder do Å‚atwej konwersji, skalowania i
+przycinania filmÃ³w.
 
 %prep
 %setup -q -n %{name}
