@@ -1,5 +1,5 @@
 Summary:	A KDE video conversion tool
-Summary(pl.UTF-8):   Konwerter filmów dla KDE
+Summary(pl.UTF-8):	Konwerter filmów dla KDE
 Name:		konverter
 Version:	0.93
 Release:	1
